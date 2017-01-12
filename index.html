@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.cs" rel="stylesheet" type="text/CSS">
-    <link href="css/styles.cs" rel="stylesheet" type="text/CSS">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/CSS">
+    <link href="css/styles.css" rel="stylesheet" type="text/CSS">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>votingbubble</title>
@@ -11,32 +11,37 @@
   <body>
     <div class="container">
       <h1> Please select your preferred political orthodoxy from the following list:</h1>
-      <div class="form">
-        <select class="form-control">
-          <option value="Rep">Republican</option>
-          <option value="Dem">Democrat</option>
-          <option value="Lib">Libertarian</option>
-          <option value="Indy">Independent</option>
-        </select>
+      <div>
+        <form>
+          <select class="form-control" id="selector">
+            <option value="none">pick a party</option>
+            <option value="Rep">Republican</option>
+            <option value="Dem">Democrat</option>
+            <option value="Lib">Libertarian</option>
+            <option value="Indy">Independent</option>
+          </select>
+        </form>
       </div>
-      <div class="Rep">
-        <h2> So you are a believer in traditional values, capitalism, and originalism.  Perhaps one of the following websites would confirm you in these beliefs.</h2>
-        <a href="http://www.redstate.com">Red State</a>
-        <a href="http://www.breitbart.com">Breitbart News</a>
-        <a href="http://www.foxnews.com">Fox News</a>
-      </div>
-      <div class="Dem">
-        <h2> So you are a believer in pluralism, single payer healthcare, and a socialized economy.  Perhaps one of the following websites would confirm you in these beliefs.</h2>
-        <a href="http://www.rachelmaddow.com">Rachel Maddow</a>
-        <a href="http://www.motherjones.com">Mother Jones</a>
-        <a href="http://www.theatlantic.com">The Atlantic</a>
-        <a href="http://www.theguardian.com">The Guardian</a>
-      </div>
-      <div class="Lib">
-        <h2> Soo you are a believer in market-driven economies, personal freedom, and Ron Paul.  I wish I could help you but we don't serve your kind here.  Pick a real party.<h2>
-      </div>
-      <div class="Indy">
-        <h2> Soo, you have the memory length of a squirrel and your opinion is swayed by the last, loudest voice you heard.  Congratulations, fuckwit!  You don't need to read shit.</h2>
+      <div>
+        <div id="Rep">
+          <h2> So you are a believer in traditional values, capitalism, and originalism.  Perhaps one of the following websites would confirm you in these beliefs.</h2>
+          <a href="http://www.redstate.com">Red State</a>
+          <a href="http://www.breitbart.com">Breitbart News</a>
+          <a href="http://www.foxnews.com">Fox News</a>
+        </div>
+        <div id="Dem">
+          <h2> So you are a believer in pluralism, single payer healthcare, and a socialized economy.  Perhaps one of the following websites would confirm you in these beliefs.</h2>
+          <a href="http://www.rachelmaddow.com">Rachel Maddow</a>
+          <a href="http://www.motherjones.com">Mother Jones</a>
+          <a href="http://www.theatlantic.com">The Atlantic</a>
+          <a href="http://www.theguardian.com">The Guardian</a>
+        </div>
+        <div id="Lib">
+          <h2> Soo you are a believer in market-driven economies, personal freedom, and Ron Paul.  I wish I could help you but we don't serve your kind here.  Pick a real party.<h2>
+        </div>
+        <div id="Indy">
+          <h2> Soo, you have the memory length of a squirrel and your opinion is swayed by the last, loudest voice you heard.  Congratulations, fuckwit!  You don't need to read shit.</h2>
+        </div>
       </div>
     </div>
   </body>
